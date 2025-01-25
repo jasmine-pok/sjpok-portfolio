@@ -140,11 +140,6 @@ header h1 {
     font-weight: 700;
 }
 
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5rem; /* Smaller font size for mobile screens */
-    }
-}
 
 header p {
     font-size: 1.4rem;
@@ -167,6 +162,20 @@ header p {
 .resume-button:hover {
     background-color: #6b6b6b;
     transform: translateY(-3px); /* Subtle lift effect */
+}
+
+/* Mobile Styles - Make header fit in one line */
+@media screen and (max-width: 600px) {
+    header h1 {
+      font-size: 1.8rem;  /* Adjust for smaller screens */
+      white-space: nowrap; /* Prevent wrapping */
+      overflow: hidden;
+      text-overflow: ellipsis; /* Adds "..." if it overflows */
+    }
+    
+    header p {
+      font-size: 1rem;  /* Adjust for smaller screens */
+    }
 }
 
 /* Main Content */
