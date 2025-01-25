@@ -112,7 +112,7 @@ nav {
 /* Header Section */
 header {
     text-align: center;
-    background: linear-gradient(135deg, #2a2a2a 50%, #1a1a1a 50%); /* Gradient background */
+    background: #2a2a2a; /* Darker background for header */
     padding: 4rem 1rem;
     border-radius: 10px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
@@ -237,7 +237,6 @@ section p {
 
 .contact-links a:hover {
     color: #ffffff;
-    transform: scale(1.05); /* Subtle hover effect */
 }
 
 /* Footer */
