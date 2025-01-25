@@ -138,6 +138,7 @@ header h1 {
     font-size: 3.5rem; /* Increased size for emphasis */
     color: #ffffff;
     font-weight: 700;
+    margin-bottom: 0.5rem; /* Slight space from paragraph */
 }
 
 
@@ -168,9 +169,7 @@ header p {
 @media screen and (max-width: 600px) {
     header h1 {
       font-size: 1.8rem;  /* Adjust for smaller screens */
-      white-space: nowrap; /* Prevent wrapping */
-      overflow: hidden;
-      text-overflow: ellipsis; /* Adds "..." if it overflows */
+      word-wrap: break-word;
     }
     
     header p {
