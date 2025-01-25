@@ -6,27 +6,27 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif; /* Updated font for modern look */
+    font-family: 'Poppins', sans-serif;
     background-color: #f5f5dc; /* Light beige background color */
-    color: #3c3c3c; /* Dark text color for contrast */
+    color: #5c4d3d; /* Dark brown text color */
     line-height: 1.6;
     padding: 20px;
 }
 
 a {
     text-decoration: none;
-    color: #b3b3b3;
+    color: #8f7d6f; /* Lighter brown for links */
 }
 
 a:hover {
-    color: #ffffff;
-    text-decoration: underline; /* Modern hover effect */
+    color: #6b4f3a; /* Slightly darker brown for hover effect */
+    text-decoration: underline;
 }
 
 /* Navigation Bar */
 nav {
     position: relative;
-    background-color: #4e3629; /* Darker shade of brown for the navbar */
+    background-color: #6e4f3b; /* Lighter brown shade for navbar */
     padding: 1rem 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -50,7 +50,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffffff; /* Lighter on hover */
+    color: #ffffff;
 }
 
 /* Hamburger Menu Icon */
@@ -80,13 +80,13 @@ nav ul li a:hover {
     }
 
     #nav-list {
-        display: none; /* Hide menu by default */
+        display: none;
         flex-direction: column;
         align-items: center;
         position: absolute;
         top: 60px;
         width: 100%;
-        background-color: #4e3629; /* Darker brown background */
+        background-color: #6e4f3b; /* Darker brown background for mobile menu */
         z-index: 10;
         padding: 10px 0;
     }
@@ -105,20 +105,19 @@ nav ul li a:hover {
     }
 
     #nav-list.show {
-        display: flex; /* Show the menu when the "show" class is added */
+        display: flex;
     }
 }
 
 /* Header Section */
 header {
     text-align: center;
-    background: #2a2a2a; /* Darker background for header */
+    background: #8a6f57; /* Lighter brown background */
     padding: 4rem 1rem;
     border-radius: 10px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
     margin-bottom: 3rem;
 }
-
 
 .profile-photo {
     width: 150px;
@@ -135,16 +134,15 @@ header {
 }
 
 header h1 {
-    font-size: 3rem; /* Increased size for emphasis */
+    font-size: 3rem;
     color: #ffffff;
     font-weight: 700;
-    margin-bottom: 0.5rem; /* Slight space from paragraph */
+    margin-bottom: 0.5rem;
 }
-
 
 header p {
     font-size: 1.4rem;
-    color: #b3b3b3;
+    color: #f1f1f1;
     margin-bottom: 1.5rem;
 }
 
@@ -155,26 +153,14 @@ header p {
     color: white;
     font-weight: 600;
     text-decoration: none;
-    border-radius: 50px; /* Rounded button */
+    border-radius: 50px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .resume-button:hover {
     background-color: #6b6b6b;
-    transform: translateY(-3px); /* Subtle lift effect */
-}
-
-/* Mobile Styles - Make header fit in one line */
-@media screen and (max-width: 600px) {
-    header h1 {
-      font-size: 1.8rem;  /* Adjust for smaller screens */
-      word-wrap: break-word;
-    }
-    
-    header p {
-      font-size: 1rem;  /* Adjust for smaller screens */
-    }
+    transform: translateY(-3px);
 }
 
 /* Main Content */
@@ -186,13 +172,13 @@ main {
 
 /* Section Styling */
 section {
-    margin-bottom: 4rem; /* More space between sections */
+    margin-bottom: 4rem;
 }
 
 section h2 {
     font-size: 2.5rem;
     color: #ffffff;
-    background-color: #333333; /* Dark background for sections */
+    background-color: #7c5a40; /* Lighter brown background for section headers */
     padding: 15px 0;
     margin-bottom: 2rem;
     text-align: center;
@@ -201,8 +187,8 @@ section h2 {
 }
 
 section p {
-    font-size: 1.4rem;  /* Matching font size for descriptions */
-    color: #b3b3b3;
+    font-size: 1.4rem;
+    color: #5c4d3d; /* Dark brown text for better visibility */
     line-height: 1.8;
 }
 
@@ -213,7 +199,7 @@ section p {
 
 #skills li {
     font-size: 1.2rem;
-    color: #f1f1f1;
+    color: #5c4d3d;
     margin-bottom: 1.5rem;
 }
 
@@ -225,32 +211,32 @@ section p {
 
 #projects li {
     font-size: 1.2rem;
-    color: #f1f1f1;
+    color: #5c4d3d;
     margin-bottom: 2rem;
 }
 
 #projects li a {
     font-weight: 700;
-    color: #4f4f4f;
-    font-size: 1.4rem;  /* Keep the title in a larger font size */
+    color: #6e4f3b; /* Brown for project title */
+    font-size: 1.4rem;
     text-decoration: none;
 }
 
 #projects li a:hover {
     color: #ffffff;
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
 }
 
 #projects li p {
-    font-size: 1.4rem;  /* Matching the font size of the About Me section */
-    color: #f7f7f7;
+    font-size: 1.4rem;
+    color: #5c4d3d;
     line-height: 1.6;
 }
 
 /* Contact Section */
 .contact-links a {
     font-weight: 600;
-    color: #b3b3b3;
+    color: #6e4f3b; /* Lighter brown color for links */
     font-size: 1.2rem;
     display: block;
     margin: 10px 0;
@@ -265,8 +251,8 @@ section p {
 footer {
     text-align: center;
     padding: 1.5rem;
-    background-color: #222222;
-    color: #b3b3b3;
+    background-color: #6e4f3b; /* Match footer with navbar */
+    color: #f1f1f1;
     font-size: 1rem;
     margin-top: 5rem;
 }
