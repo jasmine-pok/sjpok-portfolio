@@ -6,29 +6,29 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f5f5f5; /* Light beige background */
-    color: #4f4f4f; /* Dark brown text color for better readability */
+    font-family: 'Poppins', sans-serif; /* Updated font for modern look */
+    background-color: #f5f5dc; /* Light beige background color */
+    color: #3c3c3c; /* Dark text color for contrast */
     line-height: 1.6;
     padding: 20px;
 }
 
 a {
     text-decoration: none;
-    color: #a06f44; /* Warm brown color */
+    color: #b3b3b3;
 }
 
 a:hover {
-    color: #d6a84f; /* Lighter brown on hover */
-    text-decoration: underline;
+    color: #ffffff;
+    text-decoration: underline; /* Modern hover effect */
 }
 
 /* Navigation Bar */
 nav {
     position: relative;
-    background-color: #3e2a47; /* Dark brownish tone for navbar */
+    background-color: #4e3629; /* Darker shade of brown for the navbar */
     padding: 1rem 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 nav ul {
@@ -43,68 +43,138 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f1f1f1;
+    color: #f1f1f1; /* Light color for links */
     font-weight: 600;
     font-size: 1.1rem;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #d6a84f; /* Lighter brown for hover effect */
+    color: #ffffff; /* Lighter on hover */
+}
+
+/* Hamburger Menu Icon */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+.hamburger .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Mobile Styles - Initially hide the menu on mobile */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    #nav-list {
+        display: none; /* Hide menu by default */
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        background-color: #4e3629; /* Darker brown background */
+        z-index: 10;
+        padding: 10px 0;
+    }
+
+    #nav-list li {
+        margin: 1rem 0;
+    }
+
+    #nav-list li a {
+        color: #b3b3b3;
+        font-size: 1.3rem;
+    }
+
+    #nav-list li a:hover {
+        color: #ffffff;
+    }
+
+    #nav-list.show {
+        display: flex; /* Show the menu when the "show" class is added */
+    }
 }
 
 /* Header Section */
 header {
     text-align: center;
-    background: #c6a57b; /* Soft tan background for header */
+    background: #2a2a2a; /* Darker background for header */
     padding: 4rem 1rem;
     border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
     margin-bottom: 3rem;
 }
+
 
 .profile-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 4px solid #d8b48f; /* Light beige border for profile photo */
+    border: 4px solid #4f4f4f;
     object-fit: cover;
     margin-bottom: 1rem;
     transition: transform 0.3s ease;
 }
 
 .profile-photo:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Subtle hover scale effect */
 }
 
 header h1 {
-    font-size: 3rem;
-    color: #4f4f4f;
+    font-size: 3rem; /* Increased size for emphasis */
+    color: #ffffff;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem; /* Slight space from paragraph */
 }
+
 
 header p {
     font-size: 1.4rem;
-    color: #6d6d6d;
+    color: #b3b3b3;
     margin-bottom: 1.5rem;
 }
 
 .resume-button {
     display: inline-block;
     padding: 12px 30px;
-    background-color: #9c7c4e; /* Brownish-tan button color */
+    background-color: #4f4f4f;
     color: white;
     font-weight: 600;
     text-decoration: none;
-    border-radius: 50px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 50px; /* Rounded button */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .resume-button:hover {
-    background-color: #d6a84f; /* Lighter tan on hover */
-    transform: translateY(-3px);
+    background-color: #6b6b6b;
+    transform: translateY(-3px); /* Subtle lift effect */
+}
+
+/* Mobile Styles - Make header fit in one line */
+@media screen and (max-width: 600px) {
+    header h1 {
+      font-size: 1.8rem;  /* Adjust for smaller screens */
+      word-wrap: break-word;
+    }
+    
+    header p {
+      font-size: 1rem;  /* Adjust for smaller screens */
+    }
 }
 
 /* Main Content */
@@ -116,24 +186,35 @@ main {
 
 /* Section Styling */
 section {
-    margin-bottom: 4rem;
+    margin-bottom: 4rem; /* More space between sections */
 }
 
 section h2 {
     font-size: 2.5rem;
-    color: #4f4f4f;
-    background-color: #d9c5a7; /* Light beige background for section titles */
+    color: #ffffff;
+    background-color: #333333; /* Dark background for sections */
     padding: 15px 0;
     margin-bottom: 2rem;
     text-align: center;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 section p {
-    font-size: 1.2rem;
-    color: #6d6d6d; /* Slightly darker tan for text */
+    font-size: 1.4rem;  /* Matching font size for descriptions */
+    color: #b3b3b3;
     line-height: 1.8;
+}
+
+/* Skills Section */
+#skills ul {
+    list-style: none;
+}
+
+#skills li {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    margin-bottom: 1.5rem;
 }
 
 /* Projects Section */
@@ -144,32 +225,32 @@ section p {
 
 #projects li {
     font-size: 1.2rem;
-    color: #4f4f4f;
+    color: #f1f1f1;
     margin-bottom: 2rem;
 }
 
 #projects li a {
     font-weight: 700;
-    color: #9c7c4e; /* Brownish tan color for project links */
-    font-size: 1.4rem;
+    color: #4f4f4f;
+    font-size: 1.4rem;  /* Keep the title in a larger font size */
     text-decoration: none;
 }
 
 #projects li a:hover {
-    color: #d6a84f;
-    text-decoration: underline;
+    color: #ffffff;
+    text-decoration: underline; /* Underline on hover */
 }
 
 #projects li p {
-    font-size: 1.4rem;
-    color: #6d6d6d; /* Matching the section text color */
+    font-size: 1.4rem;  /* Matching the font size of the About Me section */
+    color: #f7f7f7;
     line-height: 1.6;
 }
 
 /* Contact Section */
 .contact-links a {
     font-weight: 600;
-    color: #a06f44;
+    color: #b3b3b3;
     font-size: 1.2rem;
     display: block;
     margin: 10px 0;
@@ -177,15 +258,15 @@ section p {
 }
 
 .contact-links a:hover {
-    color: #d6a84f;
+    color: #ffffff;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 1.5rem;
-    background-color: #3e2a47; /* Dark brownish footer */
-    color: #a06f44;
+    background-color: #222222;
+    color: #b3b3b3;
     font-size: 1rem;
     margin-top: 5rem;
 }
