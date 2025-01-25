@@ -232,8 +232,7 @@ section p {
 #projects li a {
     font-weight: 700; /* Bolder font weight */
     color: #4f4f4f;  /* Keep the default color for the title */
-    font-size: 1.5rem; /* Larger font size */
-    display: block; /* Make the link take up the full width */
+    font-size: 1.8rem; /* Larger font size */
     padding-bottom: 10px; /* Add padding for a nicer visual effect */
     transition: color 0.3s ease, font-weight 0.3s ease;
     margin-bottom: 1rem; /* Add space below the title */
@@ -248,7 +247,7 @@ section p {
 }
 
 #projects li p {
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: #b3b3b3; /* Lighter gray for the description text */
     line-height: 1.6;
     margin-top: 10px; /* Add space between title and description */
