@@ -226,30 +226,33 @@ section p {
 #projects li {
     font-size: 1.2rem;
     color: #f1f1f1;
-    margin-bottom: 2rem; /* Increased margin for better spacing */
+    margin-bottom: 2rem;
 }
 
 #projects li a {
-    font-weight: 700; /* Bolder font weight */
-    color: #4f4f4f;  /* Keep the default color for the title */
-    font-size: 1.8rem; /* Larger font size */
-    padding-bottom: 10px; /* Add padding for a nicer visual effect */
-    transition: color 0.3s ease;
-    margin-bottom: 1rem; /* Add space below the title */
+    display: inline-block; /* Make the link behave like a block element */
+    font-weight: 700;
+    color: #fff; /* Button text color */
+    font-size: 1.3rem;
+    padding: 12px 24px; /* Button padding */
+    background-color: #4f4f4f; /* Button background color */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+    text-decoration: none; /* Remove underline */
+    text-align: center; /* Center the text */
+    margin-bottom: 1rem;
 }
 
 #projects li a:hover {
-    color: #ffffff; /* White on hover */
-    font-weight: 800; /* Bold the title on hover */
-    text-decoration: none; 
-    padding: 5px 0; /* Slight padding to make hover effect more noticeable */
+    background-color: #333333; /* Darker background on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
 }
 
 #projects li p {
     font-size: 1rem;
-    color: #f1f1f1; 
+    color: #b3b3b3;
     line-height: 1.6;
-    margin-top: 10px; /* Add space between title and description */
+    margin-top: 10px;
 }
 
 
