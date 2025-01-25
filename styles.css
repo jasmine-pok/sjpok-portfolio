@@ -234,19 +234,19 @@ section p {
     color: #4f4f4f;  /* Keep the default color for the title */
     font-size: 1.8rem; /* Larger font size */
     padding-bottom: 10px; /* Add padding for a nicer visual effect */
-    transition: color 0.3s ease, font-weight 0.3s ease;
+    transition: color 0.3s ease;
     margin-bottom: 1rem; /* Add space below the title */
 }
 
 #projects li a:hover {
     color: #ffffff; /* White on hover */
     font-weight: 800; /* Bold the title on hover */
-    text-decoration: none; /* Remove the underline */
+    text-decoration: none; 
     padding: 5px 0; /* Slight padding to make hover effect more noticeable */
 }
 
 #projects li p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #f1f1f1; 
     line-height: 1.6;
     margin-top: 10px; /* Add space between title and description */
