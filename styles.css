@@ -230,28 +230,23 @@ section p {
 }
 
 #projects li a {
-    display: block;
     font-weight: 700;
     color: #4f4f4f;
-    font-size: 1.4rem;
-    padding: 20px;
-    background-color: #333333;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.4rem;  /* Keep the title in a larger font size */
     text-decoration: none;
-    margin-bottom: 1rem;
 }
 
 #projects li a:hover {
-    transform: translateY(-5px); /* Lift the card */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    color: #ffffff;
+    text-decoration: underline; /* Underline on hover */
 }
 
 #projects li p {
-    font-size: 1rem;
+    font-size: 1rem;  /* Matching the font size of the About Me section */
     color: #b3b3b3;
     line-height: 1.6;
 }
+
 
 
 /* Contact Section */
