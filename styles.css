@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #e3e3d3; /* Light beige background color */
+    background-color: #d0c8b4; /* Light beige background color */
     color: #5c4d3d; /* Dark brown text color */
     line-height: 1.6;
     padding: 20px;
@@ -243,7 +243,7 @@ section p {
 }
 
 .contact-links a:hover {
-    color: #ffffff;
+    text-decoration: underline;
 }
 
 /* Footer */
