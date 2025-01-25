@@ -135,7 +135,7 @@ header {
 }
 
 header h1 {
-    font-size: 3.5rem; /* Increased size for emphasis */
+    font-size: 3rem; /* Increased size for emphasis */
     color: #ffffff;
     font-weight: 700;
     margin-bottom: 0.5rem; /* Slight space from paragraph */
@@ -242,8 +242,8 @@ section p {
 }
 
 #projects li p {
-    font-size: 1rem;  /* Matching the font size of the About Me section */
-    color: #b3b3b3;
+    font-size: 1.4rem;  /* Matching the font size of the About Me section */
+    color: #f7f7f7;
     line-height: 1.6;
 }
 
