@@ -230,29 +230,27 @@ section p {
 }
 
 #projects li a {
-    display: inline-block; /* Make the link behave like a block element */
+    display: block;
     font-weight: 700;
-    color: #fff; /* Button text color */
-    font-size: 1.3rem;
-    padding: 12px 24px; /* Button padding */
-    background-color: #4f4f4f; /* Button background color */
-    border-radius: 8px; /* Rounded corners */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
-    text-decoration: none; /* Remove underline */
-    text-align: center; /* Center the text */
+    color: #4f4f4f;
+    font-size: 1.4rem;
+    padding: 20px;
+    background-color: #333333;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
     margin-bottom: 1rem;
 }
 
 #projects li a:hover {
-    background-color: #333333; /* Darker background on hover */
-    transform: translateY(-2px); /* Subtle lift effect */
+    transform: translateY(-5px); /* Lift the card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
 #projects li p {
     font-size: 1rem;
     color: #b3b3b3;
     line-height: 1.6;
-    margin-top: 10px;
 }
 
 
