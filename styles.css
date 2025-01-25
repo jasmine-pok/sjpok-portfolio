@@ -242,7 +242,6 @@ section p {
     color: #ffffff; /* White on hover */
     font-weight: 800; /* Bold the title on hover */
     text-decoration: none; /* Remove the underline */
-    background-color: #333333; /* Subtle background color change */
     padding: 5px 0; /* Slight padding to make hover effect more noticeable */
 }
 
